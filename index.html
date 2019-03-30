@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Front-End developer Portfolio</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+<header id="header">
+    <div class="header-top-wrapper">
+        <div class="header-top">
+            <div class="header-logo">
+                <div class="header-logo-wrapper">
+                    <img src="img/igor_turovskiy.jpg" alt="Igor Turovskiy" class="header-logo__logo">
+                </div>
+                <div class="header-logo-information">
+                    <div>Игорь Туровский</div>
+                    <div class="header-logo-information__who color-js">Front-End developer</div>
+                </div>
+            </div>
+            <nav class="header-top-navigation">
+                <ul class="header-top-navigation-nav" id="header-top-navigation-nav">
+                    <li class="header-top-navigation__item header-top-navigation__item_active"><a href="">Обо
+                        мне</a>
+                    </li>
+                    <li class="header-top-navigation__item"><a href="https://www.reddit.com/user/igor_turovsky"
+                                                               target="_blank">Блог</a></li>
+                    <li class="header-top-navigation__item"><a href="">Проекты</a></li>
+                    <li class="header-top-navigation__item header-top-navigation__item_email"><a
+                            href="mailto:iturovskij5@gmail.com">iturovskij5@gmail.com</a></li>
+                </ul>
+
+                <div id="nav-mobile">
+                    <div class="nav-mobile__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <section id="about-me">
+        <article class="about-me-information">
+            <h1 class="about-me-information_h">Привет, я <span class="color-js">Front-End developer</span> из Харькова,
+                Украина. Я могу
+                помочь вам
+                в разработке сайтов.</h1>
+            <div class="about-me-information-p">
+                <p>Я занимаюсь разработкой сайтов, мобильных приложений и приложений под десктоп на JavaScript</p>
+                <p>Есть проекты, которые вы хотите обсудить?</p>
+                <p>Давайте поболтаем насчет вашего проекта: <a class="about-me-information_post"
+                                                               href="mailto:iturovskij5@gmail.com"><span>iturovskij5@gmail.com</span></a>
+                </p>
+            </div>
+        </article>
+    </section>
+
+
+</header>
+<main id="main">
+
+    <section id="about">
+        <h2 class="about_header">Информация обо мне</h2>
+        <div class="about-container">
+
+            <article class="about-who">
+                <div class="about-who-img">
+                    <img class="about-who__img img-responsive" src="img/igor_turovskiy.jpg" alt="Игорь Туровский">
+                </div>
+                <h3 class="about-who__h">Краткая информация</h3>
+                <div class="about-who__information">
+                    <p> Я студент ХНУРЭ на 4 курсе.
+                    Подрабатываю на фрилансе в течении 6 месяцев. В основном занимаюсь всем что связанно с сайтами.
+                    Это мой <a href="https://freelancehunt.com/freelancer/Igor_Turovsky.html" target="_blank">аккаунт</a> на freelance, там вы можете ознакомится с моими работами.
+                    Учусь на разных платформах, вот ссылки на мои аккаунты: <a href="https://www.sololearn.com/Profile/10816139" target="_blank">Sololearn, </a>
+                    <a href="https://htmlacademy.ru/profile/id916261" target="_blank">HTMLacademy, </a>
+                    <a href="http://learn.javascript.ru/profile/igor-turovskiy" target="_blank">learnJavaScript.ru</a>
+                    </p>
+                </div>
+            </article>
+
+            <div class="about-skills">
+                <div class="about-skills-progressbar">
+                    <span id="progress-bar__HTML">HTML: 75%</span>
+                </div>
+
+                <div class="about-skills-progressbar">
+                    <span id="progress-bar__CSS">CSS: 75%</span>
+                </div>
+
+                <div class="about-skills-progressbar">
+                    <span id="progress-bar__JS">JavaScript: 60%</span>
+                </div>
+
+                <div class="about-skills-progressbar">
+                    <span id="progress-bar__English">English: 65%</span>
+                </div>
+
+                <div class="about-skills-progressbar">
+                    <span id="progress-bar__Python">Python: 50%</span>
+                </div>
+
+                <div class="about-skills-progressbar">
+                    <span id="progress-bar__MySql">MySql: 50%</span>
+                </div>
+
+                <div class="about-skills-progressbar">
+                    <span id="progress-bar__Git">Git: 50%</span>
+                </div>
+
+                <div class="about-skills-progressbar">
+                    <span id="progress-bar__Photoshop">Photoshop: 50%</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="callback">
+        <div class="callback-container">
+            <form action="https://formspree.io/iturovskij5@gmail.com" method="POST" id="callback-form">
+                <h2 class="callback__h">Обратная связь</h2>
+                <p class="callback__info color-js">У вас есть вопросы или вы хотите сотрудничать?</p>
+                <div class="callback-item">
+                    <label for="callback__name" class="callback__title"></label>
+                    <input type="text" id="callback__name" class="callback__input" placeholder="Имя">
+                </div>
+
+                <div class="callback-item">
+                    <label for="callback__email" class="callback__title"></label>
+                    <input type="email" id="callback__email" class="callback__input" required placeholder="Email">
+                </div>
+
+                <div class="callback-item">
+                    <label for="callback__message" class="callback__title"></label>
+                    <textarea name="message" id="callback__message" cols="30" rows="10" class="callback__input" placeholder="Сообщение"></textarea>
+                </div>
+                <input type="submit" value="Отправить" class="callback__submit">
+            </form>
+        </div>
+    </section>
+</main>
+
+
+<footer id="footer">
+    <div class="footer-container">
+        <div class="footer-social-links">
+
+        </div>
+        <div class="footer-copyright">Туровский Игорь <span class="color-js">©2019 Kharkiv</span></div>
+    </div>
+</footer>
+
+<script src="js/scripts.min.js"></script>
+</body>
+</html>
+
+
