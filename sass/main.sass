@@ -1,0 +1,370 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import url('https://fonts.googleapis.com/css?family=Overpass')
+
+
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: "Overpass", Helvetica Neue, Helvetica, Arial, sans-serif
+	overflow-x: hidden
+	color: $text
+	margin: 0
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.header-top-wrapper
+	padding: 0 15%
+
+#header
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	color: #fff
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/about_me_bg.jpg")
+	background-size: cover 
+	background-attachment: fixed
+	background-repeat: no-repeat
+
+.header-top
+	display: flex
+	justify-content: space-between
+	align-content: center
+	padding-top: .5%
+	flex-grow: 1
+	
+h1, h2, h3, h4, h5, h6
+	text-transform: uppercase
+
+
+
+.header-top-wrapper
+	height: 10vh
+
+.header-logo__logo
+	overflow: hidden
+	width: 100%
+	height: auto
+	border-radius: 50%
+
+.header-logo-wrapper
+	flex-basis: 60px
+
+.header-logo
+	display: flex
+	align-items: center
+	width: 30%
+
+.header-logo-information
+	margin-left: 5%
+
+.header-top-navigation-nav
+	list-style-type: none
+	display: flex
+	justify-content: space-around
+	width: 100%
+	font-weight: 400
+	font-size: 16px
+
+.header-logo-information__who
+	opacity: .5
+
+
+
+.header-top-navigation
+	width: 500px
+
+.header-top-navigation__item_active
+	border-bottom: 1px solid  #fff
+	flex-basis: 80px
+	text-align: center
+
+nav .header-top-navigation__item_active a
+	color: #fff
+
+
+.header-top-navigation__item a
+	color: #fff
+	text-decoration: none
+
+.header-top-navigation__item_email a
+	opacity: .5
+	color: $accent
+
+
+#about-me
+	display: flex
+	flex-wrap: wrap
+	align-content: center
+	font-size: 18px
+	font-weight: 400
+	justify-content: center
+	text-align: center
+	background-size: cover
+	width: 100%
+	height: 90vh
+
+
+.about-me-information_h
+	font-size: 25px
+	font-weight: 500
+
+
+.about-me-image_image
+	border-radius: 5%
+	
+.recent-projects__header, .about_header
+	text-align: left
+	margin-top: 20%
+	font-weight: 500
+
+.about_header
+	margin-top: 0
+	padding-top: 2%
+	text-align: center
+	margin-bottom: 4%
+
+.recent-projects-container
+	display: flex
+	flex-wrap: wrap
+
+.recent-projects-container-item
+	flex-basis: 350px
+	margin: 3% 1%
+	text-align: center
+	background-color: #fafafa
+	border-radius: 10px
+
+
+.recent-projects-container-item__image
+	width: 90%
+	border-radius: 10px
+
+.recent-projects-container-item__information
+	padding: 1% 5%
+
+.about-container
+	display: flex
+	justify-content: space-around
+	text-align: center
+	padding: 0 10% 5% 10%
+	flex-wrap: wrap
+
+.about-me-information_post
+	color: #FFD300
+
+#about
+	background-color: #fff
+
+	
+#callback
+	background: #252833
+	padding-bottom: 3%
+
+
+#callback-form
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+	padding: 1% 0 2% 0
+	height: 400px
+
+.callback__item
+	padding: 1.5% 0
+	text-align: center
+
+
+.callback-item
+	display: flex
+	flex-direction: column
+	align-items: center
+	color: #b5b5b5
+
+
+.callback__input
+	margin-top: 2px
+	margin-bottom: 2px
+	padding: 10px 20px
+	width: 350px
+	opacity: .8
+	background: #1E232B
+	color: #fff
+	border: none
+	border-radius: 5px
+	font-size: 16px
+
+
+.callback__submit
+	padding: 12px 28px
+	border-radius: 5px
+	margin-top: 1%
+	text-transform: uppercase
+	background-color: $accent
+	color: #fff
+	cursor: pointer
+	&:hover
+		background-color: #bc9c00
+
+
+.about-who-img
+	display: flex
+	justify-content: center
+	align-items: center
+
+.about-who__img
+	border-radius: 50%
+	width: 25%
+
+.about-skills-progressbar
+	height: 25px
+	position: relative
+	background: #dcdcdc
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3)
+	border-radius: 5px
+
+
+.about-skills
+	flex-basis: 35%
+	width: 35%
+	height: 400px
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+
+
+@keyframes move
+	0%
+		background-position: 0 0
+	100%
+		background-position: 50px 50px
+
+
+.about-skills-progressbar > span
+	display: block
+	height: 100%
+	background-color: rgb(43,194,83)
+	color: #fff
+	text-align: left
+	padding-left: 4%
+	background: $accent
+	animation: move 2s linear infinite
+	position: relative
+	overflow: hidden
+	width: 0
+
+
+.about-who
+	display: flex
+	flex-direction: column
+	align-items: center
+	flex-basis: 50%
+
+
+.about-who__h
+	text-align: left
+
+.callback__h
+	border-bottom: 2px solid #fff
+
+
+.callback__h
+	margin-bottom: 0
+
+.callback__h, .callback__info
+	color: #fff
+
+.callback__info
+	font-size: 15px
+
+.callback__title
+	color: #fff
+	font-size: 15px
+
+#footer
+	background-color: #1C232E
+	color: #fff
+
+.footer-container
+	padding: 3% 15%
+	display: flex
+	justify-content: center
+	align-items: center
+
+
+.footer-copyright
+	text-transform: uppercase
+
+.color-js
+	color: $accent
+
+	
+#nav-mobile
+	text-align: right
+	margin-top: 7%
+
+.nav-mobile__icon
+	display: none
+	width: 45px
+	height: 35px
+	position: relative
+	cursor: pointer
+
+.nav-mobile__icon span
+	display: block
+	position: absolute
+	height: 5px
+	width: 100%
+	background: #fff
+	border-radius: 9px
+	opacity: 1
+	left: 0
+	transform: rotate(0deg)
+	transition: .25s ease-in-out
+
+
+.nav-mobile__icon span:nth-child(1)
+	top: 0px
+
+
+.nav-mobile__icon span:nth-child(2), .menu__icon span:nth-child(3)
+	top: 13px
+
+
+.nav-mobile__icon span:nth-child(4)
+	top: 26px
+
+
+
+
+
+@import "media" // Always at the end
